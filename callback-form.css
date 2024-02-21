@@ -1,0 +1,82 @@
+.callback-form__container {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    width: 500px;
+    height: 100px;
+    
+    padding: 40px;
+    
+    background-color: white;
+    box-shadow: 0 0 20px 3px rgba(0,0,0,.22);
+    
+    z-index: 1000;
+}
+
+.callback-form__title {
+    text-align: center;
+}
+
+.callback-form__container h2 {
+    margin-bottom: 10px;
+}
+
+.callback-form__close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.callback-form__close-button div {
+    cursor: pointer;
+    position: relative; 
+    height: 34px;
+    width: 20px;
+}
+.callback-form__close-button .leftright, .callback-form__close-button .rightleft {
+    height: 3px;
+    width: 20px;
+    position: absolute;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 2px; 
+    transition: all .3s ease-in;    
+}
+.callback-form__close-button .leftright {
+    transform: rotate(45deg);
+}
+.callback-form__close-button .rightleft {
+    transform: rotate(-45deg);
+}
+.callback-form__close-button .close-btn {
+    margin: 35px 0 0 -5px;
+    position: absolute;
+    color: #0197d6;
+    font-family: Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+    opacity: 0;
+    
+    left:-10px;
+}
+.callback-form__close-button div:hover .leftright,.callback-form__close-button div:hover .rightleft {
+    background-color: black;    
+}
+.callback-form__close-button div:hover .leftright {
+    transform: rotate(-45deg);
+}
+.callback-form__close-button div:hover .rightleft {
+    transform: rotate(45deg);
+}
+.callback-form__close-button div:hover .close-btn {
+    opacity: 1;
+}
+
+.callback-form__container .hidden {
+    display: none;
+}
